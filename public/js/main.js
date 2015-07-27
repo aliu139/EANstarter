@@ -1,7 +1,7 @@
 /**
  * Created by aliu_000 on 7/26/2015.
  */
-var app = angular.module('app', ['ngResource', 'ngRoute']);
+var app = angular.module('appName', ['ngResource', 'ngRoute', 'controllersModule']);
 
 app.config(function($locationProvider, $routeProvider) {
     // $locationProvider.html5Mode(true);
@@ -11,4 +11,3 @@ app.config(function($locationProvider, $routeProvider) {
         .otherwise({redirectTo:'/'});
 });
 
-app.controller('ctrl', function($scope){});

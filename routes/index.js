@@ -3,17 +3,13 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('app');
 });
 
 //Necessary for clientside routing
 router.get('/partials/:filename', function(req, res, next){
   var filename = req.params.filename;
   res.render("partials/" + filename );
-});
-
-router.get('/index', function(req, res, next){
-  res.render('index');
 });
 
 module.exports = router;

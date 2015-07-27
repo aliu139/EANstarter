@@ -29,7 +29,6 @@ app.use('/users', users);
 
 //Routes for AngularJS client-side routing
 app.use('/partials/:filename', routes);
-app.use('/index', routes);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

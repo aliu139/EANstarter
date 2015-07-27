@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Test</title>
+    <!-- Included scripts-->
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-resource.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.js"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!--Bootstrap-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!--Stylesheets-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--Local JS-->
+    <script src="/js/main.js"></script>
+    <script src="/js/controllers.js"></script>
+</head>
+<body ng-app='appName'>
+Hello
+<a href="#/about"> /about</a> |
+<a href="#/"> home</a>
+<!-- uncomment if HTML5Mode on -->
+<!-- <a href="/about"> /about</a> | -->
+<!-- <a href="/"> home</a> -->
+<hr />
+<div ng-view></div>
+</body>
+</html>
